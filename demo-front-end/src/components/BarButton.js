@@ -1,18 +1,24 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { IconButton } from '@mui/material';
+import React, { useState } from 'react';
+import { IconButton, MenuItem, Menu } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router-dom';
 
-export default function BasicMenu() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+export default function BarButton() {
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const navigate = useNavigate(); // Use the useNavigate hook here
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleNavigate = (path) => {
+    handleClose();
+    navigate(path); // Navigate to the specified path
   };
 
   return (
@@ -37,8 +43,12 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Create Account</MenuItem>
-        <MenuItem onClick={handleClose}>List of Customers</MenuItem>
+        <MenuItem onClick={() => handleNavigate('/customers')}>
+          List of Customers
+        </MenuItem>
+        <MenuItem onClick={() => handleNavigate('/create-account')}>
+          Create Account
+        </MenuItem>
       </Menu>
     </div>
   );

@@ -1,15 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Fade from '@mui/material/Fade';
+import { Fade, Fab, Container, Box, 
+  useScrollTrigger, CssBaseline, Typography, Toolbar, AppBar } from '@mui/material';
+
 import BarButton from './BarButton';
 
 function ScrollTop(props) {
@@ -64,9 +58,6 @@ export default function BankBar(props) {
       <CssBaseline />
       <AppBar>
         <Toolbar>
-            {/* <IconButton id="menu-button" edge="start" color="inherit" aria-label="menu">
-                <MenuIcon />
-            </IconButton> */}
             <BarButton />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Bank Admin

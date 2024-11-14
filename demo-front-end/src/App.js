@@ -1,17 +1,20 @@
 import './App.css';
 import BankBar from './components/BankBar';
-// import AccountIdInput from './components/AccountIdInput';
-// import AccountCreditInput from './components/AccountCreditInput';
-import BasicTextFields from './components/AccountForm';
+import CreateAccount from './pages/CreateAccount';
+import Customers from './pages/Customers';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <BankBar/>
-      {/* <AccountIdInput/> */}
-      {/* <AccountCreditInput/> */}
-      <BasicTextFields/>
-    </div>
+    <Router>
+      <BankBar />
+      <Routes>
+        <Route path="/" element={<CreateAccount />} />
+        <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/customers" element={<Customers />} />
+      </Routes>
+    </Router>
   );
 }
 
