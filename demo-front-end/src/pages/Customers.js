@@ -5,8 +5,8 @@ import { Container, Paper, Table, TableBody, TableCell,
 
 function Customers() {
   const [customers, setCustomers] = useState([]);
-  const paperStyle={padding:20, height:'80vh', width:'70vw', margin:"20px auto"}
-  const headerStyle = { color: 'burlywood', textAlign: "center", padding:20 };
+  const paperStyle={padding:20, margin:"20px auto"}
+  const headerStyle = { color: 'burlywood', textAlign: "center", padding:"0 20px 20px 20px" };
 
   // Fetch customers from backend
   useEffect(() => {
