@@ -55,6 +55,10 @@ This is a demo of a full-stack application made under time constraints. If time 
 
 - [ ] Check project with a eslinter
 
+- [ ] Change form to take numeric values for Credit only
+
+- [ ] Change form to select customers on customerId
+
 And many more improvements.
 
 ## Back-end endpoints
