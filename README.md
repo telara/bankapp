@@ -17,6 +17,7 @@
   ```
 
 ### Back-End
+`demo` is also a public repository found here: https://github.com/telara/demo
 - **Back-end:** Then fire up the main in the back-end folder called demo. I use IntelliJ, but use whichever IDEA of your choice, and navigate to:
 `./demo/src/main/java/com/example/demo/DemoApplication.java` to run main.
 
