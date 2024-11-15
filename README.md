@@ -22,7 +22,7 @@
 
 ### Front-End
 
-- **Front-end:** Finally, `npm start` inside the `./demo-front-end` directory. The command in terminal:
+- **Front-end:** Finally, `npm start` inside the `./demo-front-end` directory. I personally use Visual Studio Code as my IDEA. The command in terminal:
 
 ``` bash
 npm start
@@ -55,3 +55,14 @@ This is a demo of a full-stack application made under time constraints. If time 
 - [ ] Check project with a eslinter
 
 And many more improvements.
+
+## Back-end endpoints
+
+- you can test with `http://localhost:8080/api/customers` to see the complete json in your browser
+
+- try posting data with the **Postman app** using this endpoint `localhost:8080/api/account` and x-www-form-urlencoded with this example body:
+
+| KEY           | VALUE  |
+|---------------|--------|
+| customerId    | 1      |
+| initialCredit | 10     |
