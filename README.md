@@ -61,6 +61,11 @@ And many more improvements.
 
 - you can test with `http://localhost:8080/api/customers` to see the complete json in your browser
 
+To which you'll see:
+
+![Screen 3](./readme-imgs/screen-3.png)
+
+
 - try posting data with the **Postman app** using this endpoint `localhost:8080/api/account` and x-www-form-urlencoded with this example body:
 
 | KEY           | VALUE  |
